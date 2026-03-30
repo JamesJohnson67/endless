@@ -1,0 +1,10 @@
+import random
+total = 5
+line = 1
+x = 22
+y = 18
+def pong():
+    game_board=[[" "]] * total
+    for i in range(0, total, line):
+        print(game_board)
+pong()
