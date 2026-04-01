@@ -4,10 +4,10 @@ line = 2
 x = 22
 y = 18
 def pong():
-    game_board=[["bob"]] * total
+    game_board=[["bob"]*total] * total
     lines = total / line
-    while lines != 0:
-        for i in range(0, total, line):
-            print(game_board[0][0], end= " ")
-        lines -= 1
+    print(game_board[0][0])
+    print()
+    lines -= 1
+    game_board[2][3] = "o";
 pong()
