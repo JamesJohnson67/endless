@@ -1,10 +1,13 @@
 import random
-total = 5
-line = 1
+total = 10
+line = 2
 x = 22
 y = 18
 def pong():
-    game_board=[[" "]] * total
-    for i in range(0, total, line):
-        print(game_board[0][0])
+    game_board=[["bob"]] * total
+    lines = total / line
+    while lines != 0:
+        for i in range(0, total, line):
+            print(game_board[0][0], end= " ")
+        lines -= 1
 pong()

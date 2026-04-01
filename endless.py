@@ -11,6 +11,28 @@ damage = 0
 hit_till_deaf = 0
 double_turn = 0
 debt = 0
+def clas():
+    print("      here are your random classes for this round      ")
+    print("-------------------------------------------------------")
+    class1= random.randint(1,3)
+    if class1 == 1:
+        print("tax collector/ get 2x points on questions")
+    elif class1 == 2:
+        print("hacker/ just hack if yu see the prompt")
+    elif class1 == 3:
+        print("warier/ get 2x damage on troops")
+    class2= random.randint(1,3)
+    if class2 == 1:
+        print("tax collector/ get 2x points on questions")
+    elif class2 == 2:
+        print("hacker/ just hack if yu see the prompt")
+    elif class2 == 3:
+        print("warier/ get 2x damage on troops")
+    selected = input("1 or 2: ")
+    if selected == 1:
+        classs= class1
+    elif selected == 2:
+        classs= class2
 def reset():
     global score
     global total_questions
@@ -92,6 +114,7 @@ def tic_tack_toe():
     print_board()
     print("It's a draw!")
 reset()
+clas()
 while True:
     a = random.randint(1, 10)
     b = random.randint(1, 10)
