@@ -115,6 +115,7 @@ def tic_tack_toe():
     print("It's a draw!")
 reset()
 clas()
+global classs
 while True:
     a = random.randint(1, 10)
     b = random.randint(1, 10)
@@ -135,7 +136,10 @@ while True:
             is_correct = True
     if is_correct:
         print("yes")
-        score += 1
+        if classs == 1:
+            score += 2
+        else:
+            score += 1
         streak += 1
         power_up_in -= 1
     else:
