@@ -306,7 +306,6 @@ while True:
             enamy_health += damage + 15
             attack_power += 1
             score += 69
-        
         double_turn += double_turn
         if score < -999:
             print(f"score={score} | total={total_questions} | wrong={bad_luck_answers} | streak={streak} | next_powerup={power_up_in} | attack_in={rounds_till_attack} | debt={debt}")
