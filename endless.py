@@ -11,7 +11,9 @@ damage = 0
 hit_till_deaf = 0
 double_turn = 0
 debt = 0
+classs= 0
 def clas():
+    global classs
     print("      here are your random classes for this round      ")
     print("-------------------------------------------------------")
     class1= random.randint(1,3)
@@ -115,7 +117,6 @@ def tic_tack_toe():
     print("It's a draw!")
 reset()
 clas()
-global classs
 while True:
     a = random.randint(1, 10)
     b = random.randint(1, 10)
