@@ -22,14 +22,14 @@ def clas():
     elif class1 == 2:
         print("hacker/ just hack if yu see the prompt")
     elif class1 == 3:
-        print("warier/ get 2x damage on troops")
+        print("warier/ get 2x damage end of every turn")
     class2= random.randint(1,3)
     if class2 == 1:
         print("tax collector/ get 2x points on questions")
     elif class2 == 2:
         print("hacker/ just hack if yu see the prompt")
     elif class2 == 3:
-        print("warier/ get 2x damage on troops")
+        print("warier/ get 2x damage end of every turn")
     selected = input("1 or 2: ")
     if selected == 1:
         classs= class1
@@ -107,7 +107,7 @@ def tic_tack_toe():
             print_board()
             print("You win!")
             print("you won a password")
-            print("code master 64")
+            print("Redpanda@67")
             return
         if check_winner("O"):
             print_board()
@@ -118,8 +118,8 @@ def tic_tack_toe():
 reset()
 clas()
 while True:
-    a = random.randint(1, 10)
-    b = random.randint(1, 10)
+    a = random.randint(1, 2)
+    b = random.randint(1, 2)
     answer2 = a + b
     answer3 = a - b
     symbol = random.randint(1, 2)
@@ -315,4 +315,14 @@ while True:
     no = input("reset (y/n): ")
     if no == "y":
         reset()
+    if classs == 2:
+        hack = input("enter the amount to gain 1-20: ")
+        if hack < 20:
+            print("to big you lost the chance")
+        else:
+            score += hack
+            print("score added")
+            print(" you score is now" ,score)
+    if classs == 3:
+        damage += damage
     print(f"score={score} | total={total_questions} | wrong={bad_luck_answers} | streak={streak} | next_powerup={power_up_in} | attack_in={rounds_till_attack} | debt={debt}")
