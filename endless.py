@@ -12,6 +12,7 @@ hit_till_deaf = 0
 double_turn = 0
 debt = 0
 classs= 0
+workers =0
 def clas():
     global classs
     print("      here are your random classes for this round      ")
@@ -48,6 +49,7 @@ def reset():
     global hit_till_deaf
     global double_turn
     global debt
+    global workers
     score = 0
     total_questions = 0
     bad_luck_answers = 0
@@ -60,6 +62,7 @@ def reset():
     hit_till_deaf = 0
     double_turn = 0
     debt = 0
+    workers = 0
 def tic_tack_toe():
     global damage
     print("-----------tic tack toe started-----------")
@@ -116,6 +119,7 @@ def tic_tack_toe():
     print_board()
     print("It's a draw!")
 reset()
+print("magic cards is a game where you buy cards and workers witch will give you 1 score per turn. have fun!")
 clas()
 while True:
     a = random.randint(1, 2)
@@ -325,4 +329,8 @@ while True:
             print(" you score is now" ,score)
     if classs == 3:
         damage += damage
+    buy = input("do you want to bye a worker(y/n): ")
+    if buy == "y":
+        workers += 1
+    score += workers
     print(f"score={score} | total={total_questions} | wrong={bad_luck_answers} | streak={streak} | next_powerup={power_up_in} | attack_in={rounds_till_attack} | debt={debt}")
